@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Ток-Так | Российская ИТ компания</title>
+    <meta name="description"
+        content="Полный цикл ИТ-услуг: тестирование ПО, разработка программного обеспечения и аутсорсинг IT-специалистов. Внедряем решения под ключ и предоставляем команды для ваших проектов.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>Ток-Так</h1>
+    <h2>h2 заголовок</h2>
+    <p>Мой первый текст</p>
+    <div class="top-bar">
+        <a href="uslugi.html">Услуги</a>
+        <a href="">Контакты</a>
+        <a href="">Вакансии</a>
+        <a href="">О нас</a>
+    </div>
+    <div class="images">
+        <img src="images/2nd year.svg" alt="2nd year" class="two-year">
+        <img src="images/income.svg" alt="income" class="income-icon">
+        <img src="images/process.svg" alt="process" class="process">
+        <img src="images/Profit.svg" alt="Profit" class="Profit-icon">
+        <img src="images/subscribers.svg" alt="subscribers" class="subscribers">
+        <img src="images/week.svg" alt="week" class="week">
+        <img src="images/navigator.svg" alt="navigator" class="navigator-icon">
+        <a href="index.html">
+            <img src="images/favicon.svg" alt="favicon" class="favicon-icon">
+        </a>
+    </div>
+
+    <!-- ПОДВАЛ ДОЛЖЕН БЫТЬ ЗДЕСЬ - ПОСЛЕ ВСЕХ ОСНОВНЫХ БЛОКОВ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="images/footer.png" alt="Подвал сайта" class="footer-image">
+
+            <div class="footer-overlay">
+                <div class="footer-contacts">
+                    <!--<h3>Контакты</h3>-->
+                    <p class="phone"><a href="tel:89262780788">8-926-278-07-88</a></p>
+                    <p class="phone"><a href="tel:89263925654">8-926-392-56-54</a></p>
+                    <p class="email"><a href="mailto:tok-tak2@mail.ru">tok-tak2@mail.ru</a></p>
+
+                    <div class="footer-social">
+                        <!-- <h3>Мы в соцсетях</h3> -->
+                        <a href="https://t.me/toktak1_bot">
+                            <img src="images/telegram.svg" alt="Telegram" class="social-icon">
+                        </a>
+                        <a href="https://vk.com/toktakpg?from=groups">
+                            <img src="images/vk.svg" alt="VK" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>2022 - 2025 © Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navigator = document.querySelector('.navigator-icon');
+            const topBarLinks = document.querySelectorAll('.top-bar a');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                const opacity = 1 - (scrollPosition - 100) / 300;
+                navigator.style.opacity = Math.max(opacity, 0.3);
+
+                // Меняем цвет ссылок на серебристый
+                topBarLinks.forEach(link => {
+                    link.style.color = '#808080'; // Серебристый цвет
+                });
+            } else {
+                navigator.style.opacity = 1;
+                // Возвращаем белый цвет
+                topBarLinks.forEach(link => {
+                    link.style.color = 'white';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

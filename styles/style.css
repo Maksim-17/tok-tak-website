@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: blue;
+}
+
+
+.images {
+    position: relative;
+    margin-bottom: 2200px;
+    /* Создаем место для подвала */
+}
+
+.favicon-icon {
+    transition: all 0.3s ease;
+}
+
+.favicon-icon:hover {
+    opacity: 0.6;
+    transform: scale(0.95); /* Слегка уменьшается */
+}
+
+.navigator-icon {
+    display: block;
+    position: fixed;
+    /* Абсолютное позиционирование */
+    top: 0px;
+    /* 20px от верхнего края */
+    left: 50%;
+    /* Сдвигаем в центр */
+    transform: translateX(-50%);
+    /* Корректируем смещение */
+    height: auto;
+    z-index: 1;
+    /* Чтобы была поверх других элементов */
+    transition: transform 0.3s ease;
+}
+
+.navigator-icon:hover {
+    transform: translateX(-50%) scale(1.05);
+    /* Сохраняем центрирование */
+}
+
+.Profit-icon {
+    display: block;
+    position: absolute;
+    left: -210px;
+    top: 315px;
+    animation: diagonalFromTopLeft 1s ease-out;
+}
+
+@keyframes diagonalFromTopLeft {
+    from {
+        transform: translate(-100px, -100px);
+        /* Влево и вверх */
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        /* На место */
+        opacity: 1;
+    }
+}
+
+.income-icon {
+    display: block;
+    position: absolute;
+    left: calc(50% - 415px);
+    /* 50px левее центра navigator */
+    top: 700px;
+    /* 100px ниже navigator */
+    height: auto;
+}
+
+.two-year {
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 730px;
+    animation: diagonalFromBottomRight 1s ease-out;
+}
+
+@keyframes diagonalFromBottomRight {
+    from {
+        transform: translate(100px, 100px);
+        /* Из правого нижнего угла */
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        /* На свою позицию */
+        opacity: 1;
+    }
+}
+
+.process {
+    display: block;
+    position: absolute;
+    right: 130px;
+    top: 350px;
+    animation: diagonalFromTopRight 1s ease-out;
+}
+
+@keyframes diagonalFromTopRight {
+    from {
+        transform: translate(100px, -100px);
+        /* Из правого верхнего угла */
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        /* На свою позицию */
+        opacity: 1;
+    }
+}
+
+.week {
+    display: block;
+    position: absolute;
+    left: 240px;
+    top: 940px;
+    animation: smoothFloatUp 2.2s ease-out;
+}
+
+@keyframes smoothFloatUp {
+    from {
+        transform: translateY(150px) scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.subscribers {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 200px;
+    animation: diagonalFromTopRight 1s ease-out;
+}
+
+
+.favicon-icon {
+    display: block;
+    position: absolute;
+    left: 130px;
+    top: 200px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    background-color: transparent;
+    position: fixed;
+    /* Меняем relative на fixed */
+    top: 0;
+    /* Прижимаем к верху */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Увеличиваем z-index */
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+
+    transition: color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.top-bar a:hover {
+    color: #f0f0f0;
+    /* Легкое изменение цвета текста */
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: -400px;
+    background-color: #f0f0f0;
+    bottom: 0;
+    overflow: hidden;
+    /* Обрезает выходящие за границы части */
+}
+
+.footer-image {
+    display: block;
+    width: 110%;
+    /* Растягиваем картинку */
+    height: auto;
+    margin-left: -5%;
+    /* Сдвигаем влево на 25% */
+    margin-right: -5%;
+    /* Сдвигаем вправо на 25% */
+}
+
+.footer-content {
+    position: relative;
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 40%;
+    /* Чуть выше середины */
+    left: 100px;
+    /* Сдвигаем в левую часть */
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 22px;
+}
+
+.footer-contacts p,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #f0f0f0;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.footer-contacts .phone {
+    margin-bottom: -9px; /* Малый отступ между телефонами */
+    font-weight: bold !important;
+}
+
+.footer-contacts .phone a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-contacts .phone a:hover {
+    color: inherit;
+    text-decoration: underline; /* Опционально */
+}
+
+.footer-contacts .email {
+    font-weight: normal !important;
+    margin-bottom: 25px; /* Добавьте отступ после почты */
+}
+
+.footer-contacts .email a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-contacts .email a:hover {
+    color: inherit;
+    text-decoration: underline; /* Опционально */
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+a[href*="telegram"] .social-icon,
+a[href*="t.me"] .social-icon {
+    width: 42px;
+    height: 42px;
+}
+
+a[href*="vk.com"] .social-icon,
+a[href*="vkontakte"] .social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* СТИЛИ ДЛЯ ТЕЛЕФОНОВ И ПОЧТЫ В ПОДВАЛЕ */
+.footer-contacts .phone {
+    margin-bottom: -9px;
+    font-weight: bold !important;
+}
+
+.footer-contacts .phone a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-contacts .phone a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-contacts .email {
+    font-weight: normal !important;
+    margin-bottom: 25px;
+}
+
+.footer-contacts .email a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-contacts .email a:hover {
+    color: inherit;
+    text-decoration: underline;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Услуги | Ток-Так - Российская ИТ компания</title>
+    <meta name="description"
+        content="Полный цикл ИТ-услуг: тестирование ПО, разработка программного обеспечения и аутсорсинг IT-специалистов.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles/style-uslugi.css">
+    <link rel="stylesheet" href="styles/services-dropdown.css">
+</head>
+
+<body>
+    <h1>Ток-Так</h1>
+    <h2>h2 заголовок</h2>
+    <p>Мой первый текст</p>
+
+    <!-- ТОП-БАР (такой же как в index.html) -->
+    <div class="top-bar">
+        <a href="index.html">Главная</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="">Контакты</a>
+        <a href="">Вакансии</a>
+        <a href="">О нас</a>
+    </div>
+    <div class="images">
+        <img src="images/navigator.svg" alt="navigator" class="navigator-icon">
+        <a href="index.html">
+            <img src="images/favicon.svg" alt="favicon" class="favicon-icon">
+        </a>
+    </div>
+
+    <!-- ОБНОВЛЕННЫЙ КОНТЕНТ - КАРТИНКИ РАЗДЕЛЕНЫ -->
+    <h2 class="services-title">Наши услуги</h2>
+    <p class="services-subtitle">Выберите услугу или ознакомьтесь с подробностями</p>
+
+    <!-- Кнопка Разработка -->
+    <div class="dropdown-wrapper development">
+        <div class="dropdown">
+            <a href="services/development.html" class="card-link">
+                <div class="service-image">
+                    <img src="images/development.png" alt="Разработка">
+                </div>
+                <div class="main-btn">Разработка</div>
+            </a>
+            <div class="dropdown-menu">
+                <a href="services/web-development.html" class="dropdown-item">Веб-разработка</a>
+                <a href="services/mobile-development.html" class="dropdown-item">Мобильные приложения</a>
+                <a href="services/software-development.html" class="dropdown-item">Программное обеспечение</a>
+                <a href="services/game-development.html" class="dropdown-item">Разработка игр</a>
+                <a href="services/ar-vr-ai-development.html" class="dropdown-item">AR/VR и AI</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка Тестирование -->
+    <div class="dropdown-wrapper testing">
+        <div class="dropdown">
+            <div class="service-image">
+                <img src="images/testing.jpg" alt="Тестирование">
+            </div>
+            <a href="services/testing.html" class="main-btn">Тестирование</a>
+            <div class="dropdown-menu">
+                <a href="services/functional-testing.html" class="dropdown-item">Функциональное тестирование</a>
+                <a href="services/load-testing.html" class="dropdown-item">Нагрузочное тестирование</a>
+                <a href="services/automated-testing.html" class="dropdown-item">Автоматизированное тестирование</a>
+                <a href="services/special-testing.html" class="dropdown-item">Специализированное тестирование</a>
+                <a href="services/testing-processes.html" class="dropdown-item">Процессы тестирования</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка Аутстаффинг -->
+    <div class="dropdown-wrapper outstaffing">
+        <div class="dropdown">
+            <div class="service-image">
+                <img src="images/Autstuff.jpg" alt="Аутстаффинг">
+            </div>
+            <a href="services/outstaffing.html" class="main-btn">Аутстаффинг</a>
+            <div class="dropdown-menu">
+                <a href="services/developers-outstaff.html" class="dropdown-item">Разработчики</a>
+                <a href="services/testers-outstaff.html" class="dropdown-item">Тестировщики</a>
+                <a href="services/analysts-outstaff.html" class="dropdown-item">Аналитики</a>
+                <a href="services/devops-outstaff.html" class="dropdown-item">DevOps-инженеры</a>
+                <a href="services/data-specialists-outstaff.html" class="dropdown-item">Data-специалисты</a>
+                <a href="services/ux-ui-outstaff.html" class="dropdown-item">UX/UI дизайнеры</a>
+                <a href="services/security-outstaff.html" class="dropdown-item">Security-специалисты</a>
+                <a href="services/managers-architects-outstaff.html" class="dropdown-item">Менеджеры и архитекторы</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка Аудиты и IT-консалтинг -->
+    <div class="dropdown-wrapper audit-consulting">
+        <div class="dropdown">
+            <div class="service-image">
+                <img src="images/audit.jpg" alt="Аудиты и IT-консалтинг">
+            </div>
+            <a href="services/audit-consulting.html" class="main-btn">Аудиты и IT-консалтинг</a>
+            <div class="dropdown-menu">
+                <a href="services/it-architecture-design.html" class="dropdown-item">Проектирование IT-архитектуры</a>
+                <a href="services/it-system-audit.html" class="dropdown-item">Аудит существующей IT-системы</a>
+                <a href="services/it-system-modernization.html" class="dropdown-item">Модернизация устаревших
+                    IT-систем</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка Сопровождение и развитие ПО -->
+    <div class="dropdown-wrapper support">
+        <div class="dropdown">
+            <div class="service-image">
+                <img src="images/support.jpg" alt="Сопровождение и развитие ПО">
+            </div>
+            <a href="services/support.html" class="main-btn">Сопровождение и развитие ПО</a>
+            <div class="dropdown-menu">
+                <a href="services/software-support.html" class="dropdown-item">Сопровождение программного
+                    обеспечения</a>
+                <a href="services/applications-support.html" class="dropdown-item">Поддержка и развитие приложений</a>
+                <a href="services/technical-maintenance.html" class="dropdown-item">Техническое обслуживание систем</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка Услуги 1С -->
+    <div class="dropdown-wrapper services-1c">
+        <div class="dropdown">
+            <div class="service-image">
+                <img src="images/1c.jpg" alt="Услуги 1С">
+            </div>
+            <a href="services/1c-services.html" class="main-btn">Услуги 1С</a>
+            <div class="dropdown-menu">
+                <a href="services/1c-implementation.html" class="dropdown-item">Внедрение 1С</a>
+                <a href="services/1c-support.html" class="dropdown-item">Сопровождение 1С</a>
+                <a href="services/1c-update.html" class="dropdown-item">Обновление 1С</a>
+                <a href="services/1c-automation.html" class="dropdown-item">Автоматизация 1С</a>
+                <a href="services/1c-outsourcing.html" class="dropdown-item">Аутсорсинг 1С</a>
+                <a href="services/1c-outstaffing.html" class="dropdown-item">Аутстаффинг 1С</a>
+                <a href="services/1c-customization.html" class="dropdown-item">Доработка 1С</a>
+                <a href="services/1c-installation.html" class="dropdown-item">Установка 1С</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПОДВАЛ (полностью такой же как в index.html) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="images/footer.png" alt="Подвал сайта" class="footer-image">
+
+            <div class="footer-overlay">
+                <div class="footer-contacts">
+                    <p class="phone"><a href="tel:89262780788">8-926-278-07-88</a></p>
+                    <p class="phone"><a href="tel:89263925654">8-926-392-56-54</a></p>
+                    <p class="email"><a href="mailto:tok-tak2@mail.ru">tok-tak2@mail.ru</a></p>
+
+                    <div class="footer-social">
+                        <a href="https://t.me/toktak1_bot">
+                            <img src="images/telegram.svg" alt="Telegram" class="social-icon">
+                        </a>
+                        <a href="https://vk.com/toktakpg?from=groups">
+                            <img src="images/vk.svg" alt="VK" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>2022 - 2025 © Все права защищены</p>
+            </div>
+        </div>
+        <!-- Блок консультации -->
+        <div class="consultation-form">
+            <h3 class="consultation-title">Получить консультацию эксперта</h3>
+            <form class="consultation-form-inner">
+                <!-- Все поля отдельно -->
+                <div class="form-group required">
+                    <input type="text" name="name" placeholder="Ваше имя *">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group required">
+                    <input type="tel" name="phone" placeholder="Номер телефона *" title="Введите не менее 10 цифр">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group required">
+                    <input type="email" name="email" placeholder="E-mail *">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Тема">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Организация">
+                </div>
+                <div class="form-group">
+                    <input type="file" name="file" id="file-upload" class="file-input">
+                    <label for="file-upload" class="file-label">Добавить файл</label>
+                </div>
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        // Тот же скрипт что в index.html
+        window.addEventListener('scroll', function () {
+            const navigator = document.querySelector('.navigator-icon');
+            const topBarLinks = document.querySelectorAll('.top-bar a');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                const opacity = 1 - (scrollPosition - 100) / 300;
+                if (navigator) navigator.style.opacity = Math.max(opacity, 0.3);
+
+                topBarLinks.forEach(link => {
+                    link.style.color = '#808080';
+                });
+            } else {
+                if (navigator) navigator.style.opacity = 1;
+                topBarLinks.forEach(link => {
+                    link.style.color = 'white';
+                });
+            }
+        });
+    </script>
+    <!-- Подключаем скрипт для выпадающих меню -->
+    <script src="js/services-dropdown.js"></script>
+
+    <script>
+        // █████ ЗАМЕНИ ВЕСЬ ЭТОТ СКРИПТ НА НОВЫЙ █████
+        document.querySelector('.consultation-form-inner').addEventListener('submit', function (e) {
+            const fields = this.querySelectorAll('input[placeholder*="*"]');
+            let isValid = true;
+            let errorCount = 0;
+
+            // Сначала скрываем все ошибки
+            this.querySelectorAll('.error-message').forEach(msg => {
+                msg.style.display = 'none';
+                msg.textContent = '';
+            });
+
+            // Считаем общее количество ошибок
+            fields.forEach(field => {
+                let fieldValid = true;
+
+                if (!field.value.trim()) {
+                    fieldValid = false;
+                    errorCount++;
+                }
+
+                // Специальная проверка для телефона
+                if (field.name === 'phone' && field.value.trim()) {
+                    const digitsOnly = field.value.replace(/\D/g, '');
+                    if (digitsOnly.length < 10) {
+                        fieldValid = false;
+                        errorCount++;
+                    }
+                }
+            });
+
+            // Теперь показываем ошибки с правильным текстом
+            fields.forEach(field => {
+                const errorMsg = field.nextElementSibling;
+                let fieldValid = true;
+                let errorText = '';
+
+                if (!field.value.trim()) {
+                    fieldValid = false;
+                    errorText = errorCount > 1 ? 'Поля обязательны для заполнения' : 'Поле обязательно для заполнения';
+                }
+
+                // Специальная проверка для телефона
+                if (field.name === 'phone' && field.value.trim()) {
+                    const digitsOnly = field.value.replace(/\D/g, '');
+                    if (digitsOnly.length < 10) {
+                        fieldValid = false;
+                        errorText = errorCount > 1 ? 'Поля обязательны для заполнения' : 'Поле обязательно для заполнения';
+                    }
+                }
+
+                if (!fieldValid) {
+                    field.style.borderColor = '#ff4444';
+                    field.style.background = 'rgba(255, 255, 255, 0.95)';
+                    errorMsg.textContent = errorText;
+                    errorMsg.style.display = 'block';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+                    field.style.background = 'rgba(255, 255, 255, 0.9)';
+                    errorMsg.style.display = 'none';
+                }
+            });
+
+            // █████ ВОТ ЭТУ ЧАСТЬ ЗАМЕНИ НА ТЕЛЕГРАМ █████
+            if (isValid) {
+                const botToken = '8595889406:AAH7Ei8S1hVFXRbyd2soCzJFKja10gSFypo';
+                const chatId = '431559072';
+
+                const message = `📞 Новая заявка с сайта:
+👤 Имя: ${this.name.value}
+📞 Телефон: ${this.phone.value}
+📧 Email: ${this.email.value}
+🏢 Организация: ${this.company.value || 'Не указано'}
+📋 Тема: ${this.subject.value || 'Не указано'}`;
+
+                fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: message
+                    })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.ok) {
+                            alert('✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+                            this.reset();
+                        } else {
+                            alert('❌ Ошибка отправки. Пожалуйста, позвоните нам.');
+                        }
+                    })
+                    .catch(error => {
+                        alert('❌ Ошибка сети. Пожалуйста, позвоните нам.');
+                    });
+
+                e.preventDefault();
+            } else {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
